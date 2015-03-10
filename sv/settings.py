@@ -58,8 +58,11 @@ WSGI_APPLICATION = 'sv.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'smart_db',
+        'USER': 'darshan',
+        'PASSWORD': 'pass',
+        'HOST': 'localhost',
     }
 }
 
